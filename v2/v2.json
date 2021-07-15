@@ -1,0 +1,40 @@
+{
+  "inbounds": [
+    {
+      "port": 8080,
+      "listen":"0.0.0.0",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "e73ded09-4697-4ea9-89d3-b17af02d6929",
+              "level": 0,
+              "email": "love@v2fly.org"
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": [
+             {
+             "dest": 1234,
+        "path": ""
+       }
+                ]
+      },
+
+
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+        "path": "/fuck"
+        }
+      }
+
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
